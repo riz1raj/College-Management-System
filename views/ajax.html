@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Search</title>
+</head>
+<body>
+
+	<h2 id="abc">Search Users</h1>
+	 <a href='Home.php'>Go Home</a>
+
+	<form >
+		<input type="text" id="term" name="term" onkeyup="abc()"> <br/>
+		
+	
+	</form>
+
+	<br>
+	<div id="result">
+		
+	</div>
+
+	<script type="text/javascript">
+		
+		function abc(){
+			var search = document.getElementById("term").value;
+			var xhttp = new XMLHttpRequest();	
+			
+			xhttp.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200){
+			    	document.getElementById('result').innerHTML = this.responseText;
+			    }
+			};
+			
+			xhttp.open("GET", "abc.php?key="+search, true);
+			xhttp.send(); 
+		}
+	</script>
+</body>
+</html>
