@@ -1,0 +1,6 @@
+Inside the college database in PhpMyAdmin
+
+1. For admin login after registration, please refer "admin" table: "a_name" for username and "a_password" for password
+2. For parent login after registration, please refer "parent" table: "p_name" for username and "p_password" for password
+3. For student login after registration, please refer "student_data" table: "student_name" for username and "student_pwd"
+for password. 
